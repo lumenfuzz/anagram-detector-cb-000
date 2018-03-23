@@ -1,6 +1,6 @@
 # Your code goes here!
 class Anagram
-  attr_accessor new
+  attr_accessor :new
   @@characters_of_word = []
   def initialize(word)
     @@characters_of_word = word.split("").sort!
