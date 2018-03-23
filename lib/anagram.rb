@@ -5,7 +5,7 @@ class Anagram
   def initialize(word)
     @@characters_of_word = word.split("").sort!
   end
-  def self.match(array)
+  def match(array)
     anagrams = []
     array.each do |word|
       characters = word.split("").sort!
