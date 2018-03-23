@@ -1,10 +1,12 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :new
+
   @@characters_of_word = []
+  
   def initialize(word)
     @@characters_of_word = word.split("").sort!
   end
+  
   def match(array)
     anagrams = []
     array.each do |word|
@@ -13,4 +15,5 @@ class Anagram
     end
     return anagrams
   end
+  
 end
